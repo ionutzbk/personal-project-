@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Survey </title>
+</head>
+
+<body>
+    <div class="survey-container">
+        <h2>Customer Survey</h2>
+
+        <div class="survey-question">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="survey-question">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="survey-question">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+
+        <div class="survey-question">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+        </div>
+
+        <div class="survey-question">
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+        </div>
+
+        <div class="survey-question">
+            <label>Which products are you interested in?</label><br>
+            <input type="checkbox" id="product1" name="products" value="product1">
+            <label for="product1">Product 1</label><br>
+            <input type="checkbox" id="product2" name="products" value="product2">
+            <label for="product2">Product 2</label><br>
+            <input type="checkbox" id="product3" name="products" value="product3">
+            <label for="product3">Product 3</label>
+        </div>
+
+        <div class="survey-question">
+            <label>How did you hear about us?</label><br>
+            <input type="radio" id="friend" name="source" value="friend" required>
+            <label for="friend">Friend</label><br>
+            <input type="radio" id="website" name="source" value="website" required>
+            <label for="website">Website</label><br>
+            <input type="radio" id="social-media" name="source" value="social-media" required>
+            <label for="social-media">Social Media</label><br>
+            <input type="radio" id="other-source" name="source" value="other-source" required>
+            <label for="other-source">Other</label>
+        </div>
+
+        <div class="survey-question">
+            <label for="suggestion">Any other suggestions?</label>
+            <textarea id="suggestion" name="suggestion" rows="4"></textarea>
+        </div>
+
+        <div class="survey-question">
+            <label for="rating">Rate our service (1-10):</label>
+            <input type="number" id="rating" name="rating" min="1" max="10">
+        </div>
+
+        <div class="survey-question">
+            <label>Are you satisfied with our pricing?</label><br>
+            <input type="radio" id="yes" name="pricing-satisfaction" value="yes" required>
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="pricing-satisfaction" value="no" required>
+            <label for="no">No</label>
+        </div>
+
+        <div class="survey-question">
+            <label for="improvements">Any improvements we can make?</label>
+            <textarea id="improvements" name="improvements" rows="4"></textarea>
+        </div>
+
+        <div class="survey-question">
+            <label>Which services would you like us to add?</label><br>
+            <input type="checkbox" id="service1" name="services" value="service1">
+            <label for="service1">Service 1</label><br>
+            <input type="checkbox" id="service2" name="services" value="service2">
+            <label for="service2">Service 2</label><br>
+            <input type="checkbox" id="service3" name="services" value="service3">
+            <label for="service3">Service 3</label>
+        </div>
+
+        <div class="survey-question">
+            <label>How often do you use our services?</label><br>
+            <input type="radio" id="daily" name="usage-frequency" value="daily" required>
+            <label for="daily">Daily</label><br>
+            <input type="radio" id="weekly" name="usage-frequency" value="weekly" required>
+            <label for="weekly">Weekly</label><br>
+            <input type="radio" id="monthly" name="usage-frequency" value="monthly" required>
+            <label for="monthly">Monthly</label><br>
+            <input type="radio" id="occasionally" name="usage-frequency" value="occasionally" required>
+            <label for="occasionally">Occasionally</label>
+        </div>
+
+        <div class="survey-question">
+            <label for="cancel-reason">If you wish to cancel, please provide a reason:</label>
+            <textarea id="cancel-reason" name="cancel-reason" rows="4"></textarea>
+        </div>
+
+        <div class="survey-submit">
+            <button type="submit">Submit</button>
+            <button type="button" onclick="cancelSurvey()">Cancel</button>
+        </div>
+    </div>
+
+    <script>
+        function cancelSurvey() {
+            window.location.href = "cancel.html";
+        }
+    </script>
+</body>
+
+</html>
