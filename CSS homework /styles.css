@@ -48,7 +48,8 @@ main {
     border-radius: 5px;
     background-image: url(images/iamge-gallery-glass.jpg);
     position: relative;
-    size: 400px; 
+    width: 400px; 
+    height: 300px;
     
 }
 .card2 {
@@ -57,7 +58,8 @@ main {
     border-radius: 5px;
     background-image: url(images/image-gallery-suger.jpg);
     position: relative;
-    size: 400px; 
+    width: 400px; 
+    height: 300px;
 
 }
 .card3 {
@@ -66,7 +68,8 @@ main {
     border-radius: 5px;
     background-image: url(images/image-gallery-plate-orange.jpg);
     position: relative;
-    size: 400px; 
+    width: 400px; 
+    height: 300px;
 }
 .card4 {
     padding: 20px;
@@ -74,7 +77,8 @@ main {
     border-radius: 5px;
     background-image: url(images/image-gallery-orange2.jpg);
     position: relative;
-    size: 400px; 
+    width: 400px; 
+    height: 300px;
     
 }
 .card5 {
@@ -83,7 +87,8 @@ main {
     border-radius: 5px;
     background-image:url(images/image-gallery-cheries.jpg);
     position: relative;
-    size: 400px; 
+    width: 400px; 
+    height: 300px;
 }
 .card6 {
     padding: 20px;
@@ -91,7 +96,8 @@ main {
     border-radius: 5px;
     background-image: url(images/image-gallery-orange.jpg);
     position: relative;
-    size: 400px; 
+    width: 400px; 
+    height: 300px;
 }
 .card7 {
     padding: 20px;
@@ -99,7 +105,8 @@ main {
     border-radius: 5px;
     background-image: url(images/image-gallery-cheries.jpg);
     position: relative;
-    size: 400px; 
+    width: 400px; 
+    height: 300px;
 }
 .card8 {
     padding: 20px;
@@ -107,7 +114,8 @@ main {
     border-radius: 5px;
     background-image: url(images/image-gallery-cone.jpg);
     position: relative;
-    size: 400px; 
+    width: 400px; 
+    height: 300px; 
 }
 .card {
     padding: 20px;
