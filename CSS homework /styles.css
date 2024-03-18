@@ -1,109 +1,175 @@
-body, html {
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
-    overflow: hidden; 
+    box-sizing: border-box;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    background: linear-gradient(to bottom, #8E2DE2, #4A00E0);
-    animation: backgroundAnimation 10s linear infinite; 
+body {
+    font-family: Arial, sans-serif;
 }
 
-@keyframes backgroundAnimation {
-    0% {
-        background-color: #8E2DE2; 
-    }
-    25% {
-        background-color: #4A00E0; 
-    }
-    50% {
-        background-color: #00FF00; 
-    }
-    75% {
-        background-color: #8E2DE2; 
-    }
-    100% {
-        background-color: #4A00E0; 
-    }
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
 }
 
-h1 {
-    color: white;
+header nav ul {
+    list-style: none;
 }
 
-p {
-    color: white;
-    margin-bottom: 20px;
+header nav ul li {
+    display: inline-block;
+    margin-right: 10px;
 }
 
-form {
-    width: 100%;
-    max-width: 500px;
-    padding: 40px;
-    background: linear-gradient(to bottom, #FF6B6B, #3CAEA3); 
-    border-radius: 10px;
-    animation: formAnimation 10s linear infinite; 
-}
-
-@keyframes formAnimation {
-    0% {
-        background: linear-gradient(to bottom, #FF6B6B, #3CAEA3); 
-    }
-    25% {
-        background: linear-gradient(to bottom, #3CAEA3, #4A00E0);   
-    }
-    50% {
-        background: linear-gradient(to bottom, #4A00E0, #00FF00); 
-    }
-    75% {
-        background: linear-gradient(to bottom, #00FF00, #FF6B6B); 
-    }
-    100% {
-        background: linear-gradient(to bottom, #FF6B6B, #3CAEA3); 
-    }
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px; 
-    box-sizing: border-box; 
-    text-align: center; 
-}
-
-textarea {
-    resize: none; 
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4A00E0; 
-    color: white;
-    border: none;
+header nav ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #3498db;
+    color: #fff;
 }
 
-button:hover {
-    background-color: #ee0008; 
+header nav ul li a:hover {
+    background-color: #2980b9;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.card1 {
+    padding: 20px;
+    background-size: cover;
+    border-radius: 5px;
+    background-image: url(images/iamge-gallery-glass.jpg);
+    position: relative;
+    size: 400px; 
+    
+}
+.card2 {
+    padding: 20px;
+    background-size: cover;
+    border-radius: 5px;
+    background-image: url(images/image-gallery-suger.jpg);
+    position: relative;
+    size: 400px; 
+
+}
+.card3 {
+    padding: 20px;
+    background-size: cover;
+    border-radius: 5px;
+    background-image: url(images/image-gallery-plate-orange.jpg);
+    position: relative;
+    size: 400px; 
+}
+.card4 {
+    padding: 20px;
+    background-size: cover;
+    border-radius: 5px;
+    background-image: url(images/image-gallery-orange2.jpg);
+    position: relative;
+    size: 400px; 
+    
+}
+.card5 {
+    padding: 20px;
+    background-size: cover;
+    border-radius: 5px;
+    background-image:url(images/image-gallery-cheries.jpg);
+    position: relative;
+    size: 400px; 
+}
+.card6 {
+    padding: 20px;
+    background-size: cover;
+    border-radius: 5px;
+    background-image: url(images/image-gallery-orange.jpg);
+    position: relative;
+    size: 400px; 
+}
+.card7 {
+    padding: 20px;
+    background-size: cover;
+    border-radius: 5px;
+    background-image: url(images/image-gallery-cheries.jpg);
+    position: relative;
+    size: 400px; 
+}
+.card8 {
+    padding: 20px;
+    background-size: cover;
+    border-radius: 5px;
+    background-image: url(images/image-gallery-cone.jpg);
+    position: relative;
+    size: 400px; 
+}
+.card {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav ul li {
+    list-style: none;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+    }
+
+    footer nav ul li {
+        margin: 5px 0;
+    }
 }
