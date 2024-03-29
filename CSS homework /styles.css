@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #fff;
+}
+
+header nav ul li a:hover {
+    background-color: #2980b9;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.card1 {
+    padding: 20px;
+    background-size: cover;
+    border-radius: 5px;
+    background-image: url(images/iamge-gallery-glass.jpg);
+    position: relative;
+    width: 400px; 
+    height: 300px;
+    
+}
+.card2 {
+    padding: 20px;
+    background-size: cover;
+    border-radius: 5px;
+    background-image: url(images/image-gallery-suger.jpg);
+    position: relative;
+    width: 400px; 
+    height: 300px;
+
+}
+.card3 {
+    padding: 20px;
+    background-size: cover;
+    border-radius: 5px;
+    background-image: url(images/image-gallery-plate-orange.jpg);
+    position: relative;
+    width: 400px; 
+    height: 300px;
+}
+.card4 {
+    padding: 20px;
+    background-size: cover;
+    border-radius: 5px;
+    background-image: url(images/image-gallery-orange2.jpg);
+    position: relative;
+    width: 400px; 
+    height: 300px;
+    
+}
+.card5 {
+    padding: 20px;
+    background-size: cover;
+    border-radius: 5px;
+    background-image:url(images/image-gallery-cheries.jpg);
+    position: relative;
+    width: 400px; 
+    height: 300px;
+}
+.card6 {
+    padding: 20px;
+    background-size: cover;
+    border-radius: 5px;
+    background-image: url(images/image-gallery-orange.jpg);
+    position: relative;
+    width: 400px; 
+    height: 300px;
+}
+.card7 {
+    padding: 20px;
+    background-size: cover;
+    border-radius: 5px;
+    background-image: url(images/image-gallery-cheries.jpg);
+    position: relative;
+    width: 400px; 
+    height: 300px;
+}
+.card8 {
+    padding: 20px;
+    background-size: cover;
+    border-radius: 5px;
+    background-image: url(images/image-gallery-cone.jpg);
+    position: relative;
+    width: 400px; 
+    height: 300px; 
+}
+.card {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav ul li {
+    list-style: none;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+    }
+
+    footer nav ul li {
+        margin: 5px 0;
+    }
+}
